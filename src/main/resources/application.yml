@@ -5,7 +5,7 @@ spring:
     name: ACCOUNT-SERVICE
   datasource:
     username: thujitha
-    password: ThuP26/06/98
+    password:
     url: jdbc:mysql://localhost:3306/accountDB
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
