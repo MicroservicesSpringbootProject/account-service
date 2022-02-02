@@ -5,7 +5,7 @@ spring:
     name: ACCOUNT-SERVICE
   datasource:
     username: thujitha
-    password: *
+    password: ThuP26/06/98
     url: jdbc:mysql://localhost:3306/accountDB
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
@@ -14,3 +14,13 @@ spring:
       ddl-auto: update
     properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
 
+
+eureka:
+  instance:
+    preferIpAddress: true
+    hostname: eureka-0
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://eureka-0.eureka.default.svc.cluster.local:8761/eureka
